@@ -1,0 +1,7 @@
+{
+  "name": "listeroabsoluto/shared-kernel",
+  "type": "library",
+  "require": {
+    "phpunit/phpunit": "^9"
+  }
+}

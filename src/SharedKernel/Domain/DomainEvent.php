@@ -1,6 +1,7 @@
 <?php
 
 namespace SharedKernel\Domain;
+
 /**
  * Interface DomainEvent
  * @package SharedKernel\Domain

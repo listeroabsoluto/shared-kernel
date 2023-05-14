@@ -101,4 +101,10 @@ class PersonNameTest extends TestCase
         $actual = new PersonName($firstName, $lastName);
         static::assertEquals("John Doe", (string)$actual);
     }
+
+    public function testEmpty()
+    {
+        $actual = PersonName::emptyName();
+        static::assertEquals("", (string)$actual);
+    }
 }

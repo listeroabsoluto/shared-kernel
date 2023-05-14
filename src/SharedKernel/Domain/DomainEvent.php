@@ -14,7 +14,7 @@ interface DomainEvent extends DomainObject
     public function setDomainEventDateTime(\DateTimeImmutable $dateTime);
 
     /**
-     * @return \DateTimeImmutable
+     * @return \DateTimeImmutable|null
      */
     public function getDateTime(): ?\DateTimeImmutable;
 }

@@ -1,7 +1,17 @@
 {
   "name": "listeroabsoluto/shared-kernel",
   "type": "library",
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "8.1.9"
+    }
+  },
   "require": {
+    "php": "^8.1.0"
+  },
+  "require-dev": {
+    "brianium/paratest": "^6.9",
     "phpunit/phpunit": "^9"
   },
   "autoload": {

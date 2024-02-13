@@ -3,6 +3,7 @@
 namespace SharedKernel\Application;
 
 use SharedKernel\Application\Command\Command;
+use SharedKernel\Domain\DomainEventRecorder;
 use SharedKernel\Domain\EventBusInterface;
 
 /**
@@ -36,7 +37,10 @@ class TransactionalDecorator
         };
 
         $entity = $this->transactional->execute($closure);
-        $this->eventBus->dispatchDomainEvents($entity);
+
+        if ($entity instanceof DomainEventRecorder) {
+            $this->eventBus->dispatchDomainEvents($entity);
+        }
     }
 
 }

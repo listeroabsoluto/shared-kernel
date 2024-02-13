@@ -5,7 +5,7 @@ namespace SharedKernel\Application;
 /**
  *
  */
-class TransactionalHandler
+interface TransactionalHandler
 {
 
 }
